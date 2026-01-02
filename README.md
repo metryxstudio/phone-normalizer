@@ -4,7 +4,8 @@ A Google Tag Manager variable template for both web and server containers that n
 
 ## Overview
 
-This template prepares phone numbers for hashing and sending to advertising platforms like Facebook CAPI, Google Ads, and TikTok. It converts local phone formats to the international E.164 standard required by these platforms.
+This template normalizes phone numbers for hashing and transmission to advertising platforms (Facebook CAPI, Google Ads, TikTok) by converting local formats into the international E.164 standard.
+For Google Ads, the “+” prefix must be added manually.
 
 ## Installation
 
@@ -37,7 +38,7 @@ This template prepares phone numbers for hashing and sending to advertising plat
 - Detects if country code is already present (avoids duplication)
 - Supports 200+ countries and territories
 - Returns `undefined` for invalid input
-- Output format: digits only, no plus sign (E.164 without +)
+- Output format: digits only, no plus sign (E.164 without +). As mentioned above, for Google Ads you must add the “+” prefix manually. Field example: "+{{UDA - phone_number - formatted}}"
 
 ## Supported Countries
 

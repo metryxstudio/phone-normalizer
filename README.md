@@ -1,6 +1,6 @@
 # Phone Number Normalizer
 
-A server-side Google Tag Manager variable template that normalizes phone numbers to E.164 format without plus sign. Removes non-numeric characters, leading zeros, and adds country calling code.
+A Google Tag Manager variable template for both web and server containers that normalizes phone numbers to E.164 format without plus sign. Removes non-numeric characters, leading zeros, and adds country calling code.
 
 ## Overview
 
@@ -8,7 +8,7 @@ This template prepares phone numbers for hashing and sending to advertising plat
 
 ## Installation
 
-1. In your server-side GTM container, go to **Templates** → **Variable Templates** → **Search Gallery**
+1. In your GTM container (web or server-side), go to **Templates** → **Variable Templates** → **Search Gallery**
 2. Search for "Phone Number Normalizer"
 3. Click **Add to workspace**
 
@@ -59,6 +59,12 @@ All countries with ISO 3166-1 alpha-2 codes are supported, including:
 - The country code parameter should be the ISO 2-letter code (e.g., `HR` not `385`)
 - If the phone number already includes the country calling code, it won't be duplicated
 - Local numbers with leading zero (e.g., `091...` in Croatia) are handled automatically
+
+## Compatibility
+
+This template works in both:
+- **Web GTM** containers
+- **Server-side GTM** containers
 
 ## Author
 

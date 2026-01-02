@@ -1,5 +1,5 @@
 homepage: "https://github.com/metryxstudio/phone-normalizer"
 documentation: "https://github.com/metryxstudio/phone-normalizer#readme"
 versions:
-  - sha: # Add your commit SHA after pushing to GitHub
+  - sha: 7b318f577b09a83b42ddc078a5a4728cb667af87
     changeNotes: "Initial release"
